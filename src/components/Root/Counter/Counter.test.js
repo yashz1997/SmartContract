@@ -11,6 +11,7 @@ test("Counter component works properly", () => {
   const minusOneButtonEl = getByText("-1", { selector: "button" });
   const plusOneButtonEl = getByText("+1", { selector: "button" });
   const plusTwoButtonEl = getByText("+2", { selector: "button" });
+  const plusFourButtonEl = getByText("+4", { selector: "button" });
 
   expect(counterValueEl).toHaveTextContent("0");
 
@@ -33,4 +34,9 @@ test("Counter component works properly", () => {
   fireEvent.click(plusOneButtonEl);
 
   expect(counterValueEl).toHaveTextContent("1");
+
+  fireEvent.click(plusFourButtonEl);
+
+  expect(counterValueEl).toHaveTextContent("5");
+
 });

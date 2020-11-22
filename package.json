@@ -1,6 +1,6 @@
 {
-  "name": "aws-codepipeline-demo",
-  "author": "Lucas Chen",
+  "name": "smart-contract",
+  "author": "Yash Zalavadia",
   "license": "MIT",
   "private": true,
   "devDependencies": {
